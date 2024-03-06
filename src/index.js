@@ -1,4 +1,4 @@
-// Створення прототипа UserService
+// Створення екземпляр прототипа UserService
 const userService = new UserService(
   "https://jsonplaceholder.typicode.com/users",
 );
