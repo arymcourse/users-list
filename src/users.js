@@ -29,10 +29,9 @@ UsersService.prototype.renderUsersList = function (list) {
    *
    * Кожен елемент списка повинен відображати такі властивості:
    * name
-   * username
-   * email
-   * phone
-   * company_name
+   * company.name
    *
+   * а також очікується обробник події click на кожнмоу елементі списка для відправки запита із обраним id користувача 
+   * для отримання і виведення інформації по ньому.
    */
 };
