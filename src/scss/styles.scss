@@ -1,0 +1,179 @@
+@import "maps";
+@import "mixins";
+@import "variables";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $backgroundBody-color;
+    font-family: Roboto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .positionContainter {
+        display: flex;
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        height: 75vh;
+        width: 95vh;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: $container-shadow;
+    }
+}
+
+.users {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    border-right: 1px solid;
+    border-color: $devide-color;
+}
+
+.usersDescription {
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+}
+
+/*Запитати за розпис вкладеності*/
+
+.usersTitle {
+    @include font-usersTitle;
+}
+
+.usersList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 30px 0 0 0 ;
+    margin: 0;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+    /*padding-top: 20px;*/
+   /* border-bottom: 1px solid;
+    border-color: $devide-color;*/
+}
+
+.usersPortrait {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.usersInformation {
+    display: flex;
+    flex-direction: column; 
+    padding-left: 20px;
+}
+
+.usersListName {
+    @include font-usersName;
+    margin-bottom: 5px;
+}
+
+.usersCompany {
+    @include font-usersCompany;
+}
+
+.usersDescriptionList {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    /*padding: 20px 0 0 0 ;*/
+    padding: 0;
+    margin: 0;    
+}
+
+.usersDescriptionName {
+    @include font-usersDescriptionName;
+    margin-bottom: 5px;
+}
+
+.username {
+    @include font-usersCompany;
+}
+
+
+.usersDescriptionListItem {
+    display: flex;
+    @include font-usersDescriptionListItem;
+}
+
+.usersDescriptionRequirement {
+    display: flex;
+    flex-direction: column;
+}
+
+.requirementItem {
+    padding-top: 20px;
+}
+
+.usersDescriptionData {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-end;*/
+    padding-left: 80px;
+}
+
+.DataItem {
+    padding-top: 20px;
+}
+
+.dataLink {
+    padding-top: 20px;
+    color: map-get($map: $colors, $key: link-blue);
+}
+
+/*border
+.user ul.usersList > li:not(:first-child):not(:first-child){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid;
+    border-color: $devide-color;
+}
+*/
+
+
+/*border
+ul.user > li:not(:first-child):not(:first-child){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid;
+    border-color: $devide-color;
+}
+*/
+
+/*
+
+.loading {
+    font-family: Roboto;
+    color: #888;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+*/
+
+
+
