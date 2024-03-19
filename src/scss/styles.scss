@@ -18,17 +18,17 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
 
-    .positionContainter {
-        display: flex;
-        /*justify-content: center;*/
-        /*align-items: center;*/
-        height: 75vh;
-        width: 95vh;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: $container-shadow;
-    }
+.positionContainter {
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    height: 75vh;
+    width: 95vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: $container-shadow;
 }
 
 .users {
