@@ -22,8 +22,6 @@ body {
 
 .positionContainter {
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
     height: 75vh;
     width: 95vh;
     background-color: #ffffff;
@@ -37,6 +35,9 @@ body {
     padding: 40px;
     border-right: 1px solid;
     border-color: $devide-color;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .usersDescription {
@@ -45,28 +46,42 @@ body {
     padding: 40px;
 }
 
-/*Запитати за розпис вкладеності*/
+.usersDescription .user {
+    &:not(:last-child){
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
 
 .usersTitle {
     @include font-usersTitle;
 }
 
 .usersList {
-    display: flex;
     flex-direction: column;
-    list-style: none;
-    padding: 30px 0 0 0 ;
     margin: 0;
+    padding: 30px 0 0;
+    list-style: none;
+    display: flex;
+    flex: 1;
+    overflow: auto;
 }
 
 .user {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 20px;
-    /*padding-top: 20px;*/
-   /* border-bottom: 1px solid;
-    border-color: $devide-color;*/
+
+    &:not(:last-child){
+        border-bottom: 1px solid;
+        border-color: $devide-color;
+        padding-bottom: 20px;
+    }
+
+    &:not(:first-child){
+        padding-top: 20px;
+    }
+
 }
 
 .usersPortrait {
@@ -94,7 +109,6 @@ body {
     display: flex;
     flex-direction: column;
     list-style: none;
-    /*padding: 20px 0 0 0 ;*/
     padding: 0;
     margin: 0;    
 }
@@ -162,17 +176,6 @@ ul.user > li:not(:first-child):not(:first-child){
     border-bottom: 1px solid;
     border-color: $devide-color;
 }
-*/
-
-/*
-
-.loading {
-    font-family: Roboto;
-    color: #888;
-    font-size: 15px;
-    font-weight: 400;
-}
-
 */
 
 
