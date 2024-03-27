@@ -71,7 +71,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    cursor: pointer;
     &:not(:last-child){
         border-bottom: 1px solid;
         border-color: $devide-color;
@@ -81,7 +81,6 @@ body {
     &:not(:first-child){
         padding-top: 20px;
     }
-
 }
 
 .usersPortrait {
