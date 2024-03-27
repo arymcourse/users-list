@@ -1,0 +1,57 @@
+@mixin font( $family: null, $weight: null, $size: null, $color: null) {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    color: #313131; 
+
+    @if $family != null {
+        font-family: $family;
+    }
+    @if $weight != null {
+        font-weight: $weight;
+    }
+    @if $size != null {
+        font-size: $size;
+    }
+    @if $color != null {
+        color: $color;
+    }
+}
+
+@mixin font-usersName(){
+    color: #4b4b4b; 
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+@mixin font-usersCompany(){
+    color: #888888; 
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin font-usersTitle(){
+    color: #313131;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@mixin font-usersDescriptionName(){
+    color: #4b4b4b;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+@mixin font-usersDescriptionListItem (){
+    color: #888;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
